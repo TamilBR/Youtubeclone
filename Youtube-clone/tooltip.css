@@ -1,0 +1,39 @@
+    .search_button,
+    .voice_search_button,
+    .upload_container,
+    .youtube-icon-container,
+    .notifications-icon-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search_button .tooltip,
+    .voice_search_button .tooltip,
+    .upload_container .tooltip,
+    .youtube-icon-container .tooltip,
+    .notifications-icon-container .tooltip{
+        position: absolute;
+        background-color: gray;
+        color: white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 2px;
+        font-size: 12px;
+        bottom: -30px;
+        opacity: 0;
+        transition: 0.15s;
+        pointer-events: none;
+        font-family: roboto;
+        white-space: nowrap;
+    }
+    .search_button:hover .tooltip,
+    .voice_search_button:hover .tooltip,
+    .upload_container:hover .tooltip,
+    .youtube-icon-container:hover .tooltip,
+    .notifications-icon-container:hover .tooltip
+    {
+        opacity: 1;
+    }
